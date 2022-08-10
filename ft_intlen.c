@@ -1,26 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_intlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fraalmei <fraalmei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/22 10:24:44 by fraalmei          #+#    #+#             */
-/*   Updated: 2022/08/10 15:31:04 by fraalmei         ###   ########.fr       */
+/*   Created: 2022/08/10 13:34:33 by fraalmei          #+#    #+#             */
+/*   Updated: 2022/08/10 13:39:23 by fraalmei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-	// memset fill "len" slots of "dest" with characters "c"
-void	*ft_memset(void *dest, int c, size_t len)
+	// count the digits of a int
+static size_t	ft_intlen(int n)
 {
-	size_t			j;
-	unsigned char	*ptr;
+	size_t	i;
 
-	j = -1;
-	ptr = dest;
-	while (++j < len)
-		ptr[j] = c;
-	return (dest);
+	i = 0;
+		// check if it's negative
+	if (n < 0)
+		i++;
+		// split the number by ten until it is zero
+	while (n != 0)
+	{
+		i++;
+		n = n / 10;
+	}
+	return (i);
 }

@@ -6,10 +6,11 @@
 /*   By: fraalmei <fraalmei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 10:39:55 by fraalmei          #+#    #+#             */
-/*   Updated: 2022/03/31 10:40:06 by fraalmei         ###   ########.fr       */
+/*   Updated: 2022/08/10 16:47:17 by fraalmei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+	// check if 'c' is lowercase
 int	ft_tolower(int c)
 {
 	if (c >= 65 && c <= 90)

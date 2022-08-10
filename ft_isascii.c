@@ -6,10 +6,11 @@
 /*   By: fraalmei <fraalmei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 17:23:53 by fraalmei          #+#    #+#             */
-/*   Updated: 2022/03/30 17:24:01 by fraalmei         ###   ########.fr       */
+/*   Updated: 2022/08/10 13:33:14 by fraalmei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+	// check if the char is ascii
 int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)

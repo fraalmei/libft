@@ -1,26 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strchr_nbr.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fraalmei <fraalmei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/22 10:24:44 by fraalmei          #+#    #+#             */
-/*   Updated: 2022/08/10 15:31:04 by fraalmei         ###   ########.fr       */
+/*   Created: 2022/08/05 13:34:28 by fraalmei          #+#    #+#             */
+/*   Updated: 2022/08/05 15:37:38 by fraalmei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-	// memset fill "len" slots of "dest" with characters "c"
-void	*ft_memset(void *dest, int c, size_t len)
+	// same as ft_strchr but return a int where is the position of the char
+int	ft_strchr_nbr(const char *s, int c)
 {
-	size_t			j;
-	unsigned char	*ptr;
+	int	i;
 
-	j = -1;
-	ptr = dest;
-	while (++j < len)
-		ptr[j] = c;
-	return (dest);
+	i = 0;
+	while (s[i])
+	{
+		if (s[i] == c)
+			return (++i);
+		i++;
+	}
+	return (-1);
 }
