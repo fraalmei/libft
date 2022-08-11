@@ -6,14 +6,14 @@
 /*   By: fraalmei <fraalmei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/10 13:34:33 by fraalmei          #+#    #+#             */
-/*   Updated: 2022/08/10 13:39:23 by fraalmei         ###   ########.fr       */
+/*   Updated: 2022/08/11 13:11:54 by fraalmei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 	// count the digits of a int
-static size_t	ft_intlen(int n)
+size_t	ft_intlen(int n)
 {
 	size_t	i;
 

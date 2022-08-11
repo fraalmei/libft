@@ -6,7 +6,7 @@
 /*   By: fraalmei <fraalmei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 12:58:45 by fraalmei          #+#    #+#             */
-/*   Updated: 2022/08/10 17:01:28 by fraalmei         ###   ########.fr       */
+/*   Updated: 2022/08/11 13:11:57 by fraalmei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,15 +19,14 @@
 # include <limits.h>
 # include <fcntl.h>
 
-	//buffer definido para get_next_line
+	// buffer for the get_next_line
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 1
 # endif
 
-	// estructura básica de "t_list"
-	// se define un struct de tipo "t_list"
-	// teniendo dos variables
-	// content (contenido) y next (siguiente elemento de la lista)
+	// basic structure of "t_list"
+	// its defined a struct type "t_list"
+	// with two variables content and next (element of the list)
 typedef struct s_list
 {
 	void			*content;
@@ -91,5 +90,8 @@ char	*ft_chrjoin(char *s1, char s2);
 char	*get_next_line(int fd);
 char	*ft_strjoin_onefree(char *s1, char const *s2);
 int		ft_strchr_nbr(const char *s, int c);
+
+		//extras
+size_t	ft_intlen(int n);
 
 #endif
