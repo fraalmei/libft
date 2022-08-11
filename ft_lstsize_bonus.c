@@ -6,18 +6,19 @@
 /*   By: fraalmei <fraalmei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 08:47:51 by fraalmei          #+#    #+#             */
-/*   Updated: 2022/04/05 10:29:41 by fraalmei         ###   ########.fr       */
+/*   Updated: 2022/08/11 09:35:35 by fraalmei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-	// cuenta el numero de elementos de una lista
+	// count the element of the list
 int	ft_lstsize(t_list *lst)
 {
 	unsigned int	i;
 
 	i = 0;
+		// travel "lst" while exists
 	while (lst)
 	{
 		lst = lst->next;
@@ -25,24 +26,3 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (i);
 }
-/*
-#include "libft.h"
-#include "lst_libft.h"
-
-int	ft_lstsize(t_list *lst)
-{
-	unsigned int	i;
-
-	i = 0;
-	// recorremos "lst" mientras exista
-	while (lst)
-	{
-		// nos movemos por los elmentos de la lista hasta el ultimmo elemento
-		// que en su variable "next" tiene NULL al no apuntar a ningun otro elemento
-		lst = lst->next;
-		i++;
-	}
-	// devolviendo las veces que cambiamos de elemento
-	return (i);
-}
-*/
