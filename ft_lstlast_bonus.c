@@ -15,9 +15,6 @@
 	// return a pointer to the last element of the list
 t_list	*ft_lstlast(t_list *lst)
 {
-	int	i;
-
-	i = 0;
 	while (lst)
 	{
 		if (!lst->next)
