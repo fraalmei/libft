@@ -6,7 +6,7 @@
 /*   By: fraalmei <fraalmei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 18:21:21 by fraalmei          #+#    #+#             */
-/*   Updated: 2022/08/10 16:32:13 by fraalmei         ###   ########.fr       */
+/*   Updated: 2023/04/21 13:11:17 by fraalmei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	void	*s;
 
 	if (!s1)
-		s = (char *)ft_calloc(1, sizeof(char));
+		s1 = (char *)ft_calloc(1, sizeof(char));
 	if (s1 == NULL || s2 == NULL)
 		return (NULL);
 	s = ft_calloc(sizeof(char), ft_strlen(s1) + ft_strlen(s2) + 1);
@@ -36,7 +36,7 @@ char	*ft_strjoin_onefree(char *s1, char const *s2)
 	void	*s;
 
 	if (!s1)
-		s = (char *)ft_calloc(1, sizeof(char));
+		s1 = (char *)ft_calloc(1, sizeof(char));
 	if (s1 == NULL || s2 == NULL)
 		return (NULL);
 	s = ft_calloc(sizeof(char), ft_strlen(s1) + ft_strlen(s2) + 1);
